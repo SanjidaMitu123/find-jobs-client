@@ -1,11 +1,11 @@
 
-// import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import { Link } from "react-router-dom";
 
-// import { AuthContext } from "../firebase/Authprovider";
-// import { useContext } from "react";
-// import swal from "sweetalert";
+
+import { AuthContext } from "../firebase/Authprovider";
+import { useContext } from "react";
+import swal from "sweetalert";
 
 
 
@@ -13,46 +13,46 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
 
-//   const {signIn, googleSingIn} = useContext(AuthContext);
+  const {signIn, googleSingIn} = useContext(AuthContext);
 
-//   const location = useLocation();
-//   const navigate = useNavigate();
+  const location = useLocation();
+  const navigate = useNavigate();
 
-//   const googlelogin = () =>{
-//     googleSingIn().then(result =>{
-//       console.log(result.user)
-//     })
-//   }
+  const googlelogin = () =>{
+    googleSingIn().then(result =>{
+      console.log(result.user)
+    })
+  }
   
-//   console.log(location)
+  console.log(location)
   
-//     const Login = e => {
-//         e.preventDefault();
-//         console.log(e.currentTarget)
-//          const form = new FormData(e.currentTarget);
-//          const email = form.get('email');
-//          const password = form.get('password');
-//          console.log(email, password)
+    const Login = e => {
+        e.preventDefault();
+        console.log(e.currentTarget)
+         const form = new FormData(e.currentTarget);
+         const email = form.get('email');
+         const password = form.get('password');
+         console.log(email, password)
 
-//          signIn(email, password)
-//          .then(result =>{
-//           console.log(result)
-//           swal ('login successfully');
-//           navigate(location?.state ? location.state : '/');
+         signIn(email, password)
+         .then(result =>{
+          console.log(result)
+          swal ('login successfully');
+          navigate(location?.state ? location.state : '/');
           
-//          })
-//          .catch (error => {
-//           console.error(error)
-//           swal ("user name or password incorrect")
-//          })
+         })
+         .catch (error => {
+          console.error(error)
+          swal ("user name or password incorrect")
+         })
          
-//     }
+    }
     
     return (
         <div>
          <h1 className="text-4xl text-center">Login</h1>
       <form 
-    //   onSubmit={Login} 
+      onSubmit={Login} 
       className="md:w-3/4 lg:w-1/2 mx-auto" >
       <div className="form-control">
           <label className="label">
@@ -75,7 +75,7 @@ const Login = () => {
       </form>
 
       <button
-    //    onClick={googlelogin}
+       onClick={googlelogin}
         className="lg:ml-[520px] mt-4 w-[300px] btn btn-primary">Login with Google</button>
 
       <p className="text-center mt-5 mb-5">For new Account
