@@ -110,7 +110,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+    <NavLink to="/login">
     <a className="btn">Login</a>
+    </NavLink>
   </div>
 </div>
         </div>
