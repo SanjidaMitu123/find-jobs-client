@@ -81,7 +81,7 @@ const Login = () => {
       <p className="text-center mt-5 mb-5">For new Account
        <Link
        to='/register' className="font-bold text-blue-500 mt-5"> Resgister</Link>
-        Now</p>
+         Now</p>
             
         
         </div>
