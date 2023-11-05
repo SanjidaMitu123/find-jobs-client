@@ -1,7 +1,7 @@
 
 // import { Link, useLocation, useNavigate } from "react-router-dom";
 
-
+import { Link } from "react-router-dom";
 
 // import { AuthContext } from "../firebase/Authprovider";
 // import { useContext } from "react";
@@ -79,8 +79,8 @@ const Login = () => {
         className="lg:ml-[520px] mt-4 w-[300px] btn btn-primary">Login with Google</button>
 
       <p className="text-center mt-5 mb-5">For new Account
-       {/* <Link
-       to='/register' className="font-bold text-lime-500 mt-5"> Resgister</Link> */}
+       <Link
+       to='/register' className="font-bold text-blue-500 mt-5"> Resgister</Link>
         Now</p>
             
         
