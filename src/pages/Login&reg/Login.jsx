@@ -3,9 +3,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 
-import { AuthContext } from "../firebase/Authprovider";
+
 import { useContext } from "react";
 import swal from "sweetalert";
+import { AuthContext } from "../../firebase/Authprovider";
 
 
 
