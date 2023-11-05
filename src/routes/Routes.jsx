@@ -10,6 +10,9 @@ import Register from "../pages/Login&reg/Register";
 import Alljobs from "../pages/Alljobs";
 import Addjob from "../pages/Addjob";
 import Mybids from "../pages/Mybids";
+import Bidreq from "../pages/Bidreq";
+import Contact from "../pages/Contact";
+import Aboutus from "../pages/Aboutus";
 
 const router =   createBrowserRouter([
     {
@@ -49,6 +52,21 @@ const router =   createBrowserRouter([
 {
   path : "/mybids",
   element : <Mybids></Mybids>,
+ 
+} ,
+{
+  path : "/bidreq",
+  element : <Bidreq></Bidreq>,
+ 
+}  ,
+{
+  path : "/contacts",
+  element : <Contact></Contact>,
+ 
+} ,
+{
+  path : "/aboutus",
+  element : <Aboutus></Aboutus>,
  
 } 
       ]
