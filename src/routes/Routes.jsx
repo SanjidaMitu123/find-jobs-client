@@ -13,6 +13,9 @@ import Mybids from "../pages/Mybids";
 import Bidreq from "../pages/Bidreq";
 import Contact from "../pages/Contact";
 import Aboutus from "../pages/Aboutus";
+import Mypostedjob from "../pages/Mypostedjob";
+import PrivateRoute from "./PrivateRouter";
+import Addcat from "../pages/Addcat";
 
 const router =   createBrowserRouter([
     {
@@ -46,7 +49,7 @@ const router =   createBrowserRouter([
   } ,
   {
     path : "/mypostedjob",
-    element : <Addjob></Addjob>,
+    element : <Mypostedjob></Mypostedjob>,
    
 } ,
 {
@@ -68,7 +71,12 @@ const router =   createBrowserRouter([
   path : "/aboutus",
   element : <Aboutus></Aboutus>,
  
-} 
+} ,
+{
+  path : "/addcat",
+  element : <PrivateRoute><Addcat></Addcat></PrivateRoute>,
+  
+},
       ]
       
     },
