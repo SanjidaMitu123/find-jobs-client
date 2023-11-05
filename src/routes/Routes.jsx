@@ -8,6 +8,7 @@ import ErrorPage from "../Errorpage";
 import Login from "../pages/Login&reg/Login";
 import Register from "../pages/Login&reg/Register";
 import Alljobs from "../pages/Alljobs";
+import Addjob from "../pages/Addjob";
 
 const router =   createBrowserRouter([
     {
@@ -33,7 +34,17 @@ const router =   createBrowserRouter([
         path : "/alljobs",
         element : <Alljobs></Alljobs>,
        
-    } 
+    } ,
+    {
+      path : "/addjobs",
+      element : <Addjob></Addjob>,
+     
+  } ,
+  {
+    path : "/mypostedjob",
+    element : <Addjob></Addjob>,
+   
+} 
       ]
       
     },
