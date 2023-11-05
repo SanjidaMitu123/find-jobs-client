@@ -1,7 +1,7 @@
 const Logo = () => {
     return (
         <div>
-            <img className="h-[50px] w-[50px] rounded-full " src="../../../public/find job logo.PNG" alt="" />
+            <img className="h-[50px] w-[50px]  " src="../../../public/find job logo.PNG" alt="" />
         </div>
     );
 };

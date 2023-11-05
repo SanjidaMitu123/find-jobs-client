@@ -42,7 +42,17 @@ const Navbar = () => {
                    isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                     }
                    >
-                    Services
+                   All Jobs
+                 </NavLink>
+              </li>
+                 <li>
+                 <NavLink
+                   to="/services"
+                   className={({ isActive, isPending }) =>
+                   isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
+                    }
+                   >
+                    Add job
                  </NavLink>
               </li>
               <li>
@@ -52,7 +62,7 @@ const Navbar = () => {
                    isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                     }
                    >
-                    Works
+                   My posted jobs
                  </NavLink>
               </li>
            
@@ -63,7 +73,7 @@ const Navbar = () => {
                    isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                     }
                    >
-                    Reviews
+                    My Bids
                  </NavLink>
               </li>
               <li>
@@ -73,7 +83,7 @@ const Navbar = () => {
                    isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                     }
                    >
-                    Blogs
+                    Bid Requests
                  </NavLink>
               </li>
               <li>
@@ -84,6 +94,16 @@ const Navbar = () => {
                     }
                    >
                     Contact
+                 </NavLink>
+              </li>
+              <li>
+                 <NavLink
+                   to="/contacts"
+                   className={({ isActive, isPending }) =>
+                   isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
+                    }
+                   >
+                    About Us
                  </NavLink>
               </li>
        

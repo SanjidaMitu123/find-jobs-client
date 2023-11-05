@@ -12,28 +12,28 @@ const Slider = () => {
         <div className="h-[500px]">
             <div data-aos="fade-right" className="carousel w-full h-[500px]">
   <div id="slide1" className="carousel-item relative w-full">
-    <img src="https://media.istockphoto.com/id/1423549590/photo/fresh-flowers-wedding-decoration-table-set-up.jpg?s=1024x1024&w=is&k=20&c=U-vriNJ9jd0OVn4Cg7cuj3LzWdLU3dV3rdDTqr74-UE=" className="w-full" />
+    <img src="https://img.freepik.com/free-photo/we-are-hiring-digital-collage_23-2149667063.jpg?w=900&t=st=1699185316~exp=1699185916~hmac=15dabf26755f613f879c92687c3ed2c4a80b510ffb8597b48640da9d66cbd0f3" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide4" className="btn btn-circle">❮</a> 
       <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide2" className="carousel-item relative w-full ">
-    <img src="https://media.istockphoto.com/id/1424487638/photo/fresh-flowers-wedding-decoration-table-set-up.jpg?s=1024x1024&w=is&k=20&c=_kpBoq5qpE4QNb_02kzmYKpy3mRhzd-OofGX_Ca2vX0=" className="w-full" />
+    <img src="https://as1.ftcdn.net/v2/jpg/02/58/55/00/1000_F_258550061_43hwStAIQf5bHwusnHDQ0AsaNgDP111w.jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 
       <a href="#slide3" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide3" className="carousel-item relative w-full">
-    <img src="https://media.istockphoto.com/id/497778014/photo/beautiful-wedding-tables-and-roses.jpg?s=1024x1024&w=is&k=20&c=dH1VWReMs1haIMhU0__rzpWlFxY1W2iCFjo-hvnOIO8=" className="w-full" />
+    <img src="https://previews.123rf.com/images/garagestock/garagestock1701/garagestock170138628/70143600-job-search-banner.jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide2" className="btn btn-circle">❮</a> 
       <a href="#slide4" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide4" className="carousel-item relative w-full">
-    <img src="https://media.istockphoto.com/id/1053715496/photo/beautifully-decorated-festive-table-with-plates-and-glasses-and-a-bouquet-of-flowers-in-a.jpg?s=1024x1024&w=is&k=20&c=nBEAoyc7mUXYkMRRvSrKkaPeNL2gGlWv0leiMtM6_w0=" className="w-full" />
+    <img src="https://img.freepik.com/premium-vector/we-are-hiring-apply-now-announcement-banner-design_535749-1787.jpg?w=740" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide3" className="btn btn-circle">❮</a> 
       <a href="#slide1" className="btn btn-circle">❯</a>
