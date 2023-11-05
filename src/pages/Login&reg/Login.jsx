@@ -71,7 +71,7 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-success">Login</button>
+          <button className="btn btn-secondary">Login</button>
         </div>
       </form>
 
