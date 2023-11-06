@@ -1,13 +1,48 @@
 
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 const Addcat = () => {
+
+
+
+    const addcat = event =>{
+        event.preventDefault(); 
+
+        const form = event.target;
+        const categoryname = form.categoryname.value;
+       
+
+        const newcategory = { categoryname}
+        fetch('http://localhost:5000/category',{
+            method : 'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newcategory )
+          })
+          .then(res=>res.json())
+          .then(data=>{
+            console.log(data);
+            if(data.insertedId){
+                Swal.fire({
+                  title: 'success!',
+                  text: 'Category added successfully',
+                  icon: 'success',
+                  confirmButtonText: 'Cool'
+                })
+              }
+          })
+
+
+       }
+
     return (
         <div>
            <div>
-        <div className="bg-lime-300 m-16 p-20">
+        <div className="bg-primary m-16 p-20">
             <h1 className="text-center text-3xl font-bold">Add Category</h1>
             <form 
-            // onSubmit={addbrands}
+            onSubmit={addcat}
             >
                 {/* row 1 */}
                 <div className="flex">

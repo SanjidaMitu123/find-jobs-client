@@ -16,6 +16,7 @@ import Aboutus from "../pages/Aboutus";
 import Mypostedjob from "../pages/Mypostedjob";
 import PrivateRoute from "./PrivateRouter";
 import Addcat from "../pages/Addcat";
+import Jobdetails from "../pages/Jobdetails";
 
 const router =   createBrowserRouter([
     {
@@ -26,6 +27,7 @@ const router =   createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
+            loader : () => fetch('http://localhost:5000/jobs')
         },
         {
           path : "/login",
@@ -40,26 +42,27 @@ const router =   createBrowserRouter([
       {
         path : "/alljobs",
         element : <Alljobs></Alljobs>,
+        loader : () => fetch('http://localhost:5000/jobs')
        
     } ,
     {
       path : "/addjobs",
-      element : <Addjob></Addjob>,
+      element : <PrivateRoute><Addjob></Addjob></PrivateRoute>,
      
   } ,
   {
     path : "/mypostedjob",
-    element : <Mypostedjob></Mypostedjob>,
+    element : <PrivateRoute><Mypostedjob></Mypostedjob></PrivateRoute>,
    
 } ,
 {
   path : "/mybids",
-  element : <Mybids></Mybids>,
+  element : <PrivateRoute><Mybids></Mybids></PrivateRoute>,
  
 } ,
 {
   path : "/bidreq",
-  element : <Bidreq></Bidreq>,
+  element : <PrivateRoute><Bidreq></Bidreq></PrivateRoute>,
  
 }  ,
 {
@@ -77,6 +80,14 @@ const router =   createBrowserRouter([
   element : <PrivateRoute><Addcat></Addcat></PrivateRoute>,
   
 },
+
+{
+  
+  path : "/jobs/:_id",
+  element : <PrivateRoute><Jobdetails></Jobdetails></PrivateRoute>,
+  loader : () => fetch('http://localhost:5000/jobs')
+   
+} 
       ]
       
     },
