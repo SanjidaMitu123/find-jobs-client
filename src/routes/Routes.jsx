@@ -64,7 +64,7 @@ const router =   createBrowserRouter([
 {
   path : "/bidreq",
   element : <PrivateRoute><Bidreq></Bidreq></PrivateRoute>,
- 
+  loader : () => fetch('http://localhost:5000/bids')
 }  ,
 {
   path : "/contacts",
@@ -78,8 +78,9 @@ const router =   createBrowserRouter([
 }
 ,
 {
-  path : "/bidnow",
+  path : "/bidnow/:_id",
   element : <PrivateRoute><Bidnow></Bidnow></PrivateRoute>,
+  loader : () => fetch('http://localhost:5000/jobs')
   
 } ,
 {

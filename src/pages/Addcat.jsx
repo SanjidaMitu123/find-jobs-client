@@ -26,7 +26,7 @@ const Addcat = () => {
             if(data.insertedId){
                 Swal.fire({
                   title: 'success!',
-                  text: 'Category added successfully',
+                  text: 'Job Category added successfully',
                   icon: 'success',
                   confirmButtonText: 'Cool'
                 })

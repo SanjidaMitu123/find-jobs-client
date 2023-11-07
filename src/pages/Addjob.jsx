@@ -161,7 +161,7 @@ const Addjob = () => {
 
 
             </form>
-            <Link to='/addcat' > <button className="text-center text-xl font-bold  btn btn-warning m-5">Add Category</button> </Link> 
+            <Link to='/addcat' > <button className="text-center text-xl font-bold  btn btn-warning m-5">Add jod Category</button> </Link> 
     
         </div>
         </div>
