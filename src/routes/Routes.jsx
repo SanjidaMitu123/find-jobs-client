@@ -17,6 +17,7 @@ import Mypostedjob from "../pages/Mypostedjob";
 import PrivateRoute from "./PrivateRouter";
 import Addcat from "../pages/Addcat";
 import Jobdetails from "../pages/Jobdetails";
+import Bidnow from "../pages/Bidnow";
 
 const router =   createBrowserRouter([
     {
@@ -74,6 +75,12 @@ const router =   createBrowserRouter([
   path : "/aboutus",
   element : <Aboutus></Aboutus>,
  
+}
+,
+{
+  path : "/bidnow",
+  element : <PrivateRoute><Bidnow></Bidnow></PrivateRoute>,
+  
 } ,
 {
   path : "/addcat",
