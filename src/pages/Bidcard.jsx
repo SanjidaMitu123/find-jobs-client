@@ -22,7 +22,7 @@ function Bidcard({bid}) {
 
         const updatedjob = { status };
          
-        fetch(`https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/bids/${_id}`,{
+        fetch(`https://b8a11-server-side-sanjida-mitu123.vercel.app/bids/${_id}`,{
             method : 'PUT',
           headers:{
               'content-type': 'application/json'
@@ -44,7 +44,7 @@ function Bidcard({bid}) {
 
         const updatedjob = { status };
          
-        fetch(`https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/bids/${_id}`,{
+        fetch(`https://b8a11-server-side-sanjida-mitu123.vercel.app/bids/${_id}`,{
             method : 'PUT',
           headers:{
               'content-type': 'application/json'

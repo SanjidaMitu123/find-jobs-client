@@ -18,7 +18,7 @@ function Myjobcard({job}) {
     const jobdelete = _id =>{
         console.log(_id);
         Swal.fire("Delete Sucessfully!");
-        fetch(`https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs/${_id}`,{
+        fetch(`https://b8a11-server-side-sanjida-mitu123.vercel.app/jobs/${_id}`,{
             method : 'DELETE'
         })
         .then(res=> res.json())

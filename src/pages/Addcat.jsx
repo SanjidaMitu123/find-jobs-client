@@ -13,7 +13,7 @@ const Addcat = () => {
        
 
         const newcategory = { categoryname}
-        fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/category',{
+        fetch('https://b8a11-server-side-sanjida-mitu123.vercel.app/category',{
             method : 'POST',
             headers:{
                 'content-type': 'application/json'

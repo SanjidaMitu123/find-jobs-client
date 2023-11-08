@@ -40,7 +40,7 @@ function Bidnow() {
         const status= "pending";
 
         const newbid = { myemail,buyeremail,bidprice,deadline,jobtitle,description,category,img,status}
-        fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/bids',{
+        fetch('https://b8a11-server-side-sanjida-mitu123.vercel.app/bids',{
             method : 'POST',
             headers:{
                 'content-type': 'application/json'

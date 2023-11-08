@@ -41,7 +41,7 @@ function Updatejobdetails() {
         const updatedjob = { employername,jobtitle,deadline,description,minimumprice,maxprice,category,img };
         console.log(updatedjob);
 
-        fetch(`https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs/${_id}`,{
+        fetch(`https://b8a11-server-side-sanjida-mitu123.vercel.app/jobs/${_id}`,{
             method : 'PUT',
           headers:{
               'content-type': 'application/json'

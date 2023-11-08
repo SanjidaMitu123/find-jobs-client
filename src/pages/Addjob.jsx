@@ -26,7 +26,7 @@ const Addjob = () => {
         const newjob = { employername,jobtitle,deadline,description,minimumprice,maxprice,category,img };
         console.log(newjob);
 
-        fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs',{
+        fetch('https://b8a11-server-side-sanjida-mitu123.vercel.app/jobs',{
           method : 'POST',
           headers:{
               'content-type': 'application/json'
