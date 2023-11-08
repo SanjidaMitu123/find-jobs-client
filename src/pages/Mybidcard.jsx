@@ -1,11 +1,20 @@
 /* eslint-disable react/prop-types */
 
+import Aos from "aos";
+import { useEffect } from "react";
+
 function Mybidcard({bid}) {
+
+    useEffect(()=>{
+        Aos.init({duration:1000})
+    },[])
+
+
     const  { _id,myemail,buyeremail,bidprice,jobtitle,description,category,img,status }=bid;
     return (
         <div>
                 <div>
-            <div key={_id}   className="relative m-11 h-[450px] flex  w-69 flex-col rounded-xl mt-5 bg-clip-border text-gray-700 shadow-md">
+            <div data-aos="zoom-out-right" key={_id}   className="relative m-11 h-[450px] flex  w-69 flex-col rounded-xl mt-5 bg-clip-border text-gray-700 shadow-md">
       
       <div  className="relative mb-5  h-36 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
         <img

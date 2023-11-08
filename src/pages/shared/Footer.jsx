@@ -1,10 +1,19 @@
+import Aos from "aos";
 import Logo from "./Logo";
+import { useEffect } from "react";
+
+
 
 
 const Footer = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+},[])
+
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer data-aos="fade-down" className="footer p-10 bg-base-200 text-base-content">
   <nav>
     <header className="footer-title">Services</header> 
     <a className="link link-hover">Branding</a> 

@@ -9,7 +9,7 @@ const Slider = () => {
 },[])
 
     return (
-        <div className="h-[500px]">
+        <div data-aos="zoom-out" className="h-[500px]">
             <div data-aos="fade-right" className="carousel w-full h-[500px]">
   <div id="slide1" className="carousel-item relative w-full">
     <img src="https://img.freepik.com/free-photo/we-are-hiring-digital-collage_23-2149667063.jpg?w=900&t=st=1699185316~exp=1699185916~hmac=15dabf26755f613f879c92687c3ed2c4a80b510ffb8597b48640da9d66cbd0f3" className="w-full" />

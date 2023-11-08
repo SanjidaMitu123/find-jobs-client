@@ -1,9 +1,14 @@
 
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../firebase/Authprovider";
+import Aos from "aos";
 const Navbar = () => {
+
+   useEffect(()=>{
+      Aos.init({duration:1000})
+  },[])
 
     const {user, logout}= useContext(AuthContext);
 
@@ -14,7 +19,7 @@ const Navbar = () => {
      }
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div  data-aos="flip-down" className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,7 +30,7 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"> 
+    <a data-aos="flip-down" className="btn btn-ghost normal-case text-xl "> 
         <Logo></Logo>
         Find Job
     </a>
