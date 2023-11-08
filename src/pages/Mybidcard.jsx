@@ -1,63 +1,10 @@
 /* eslint-disable react/prop-types */
 
-import Swal from "sweetalert2";
-
-
-
-function Bidcard({bid}) {
-
-    const  { _id,myemail,buyeremail,bidprice,jobtitle,description,category,img }=bid;
-
-    const rejectbtn = _id =>{
-        console.log(_id);
-        Swal.fire("rejected Sucessfully!");
-        
-        const status = "Rejected";
-
-        const updatedjob = { status };
-         
-        fetch(`http://localhost:5000/bids/${_id}`,{
-            method : 'PUT',
-          headers:{
-              'content-type': 'application/json'
-          },
-          body: JSON.stringify(updatedjob)
-        })
-        .then(res=> res.json())
-        .then(data => {
-            console.log(data)
-        })
-
-        
-    }
-    const acceptbtn = _id =>{
-        console.log(_id);
-        Swal.fire("Accepted Sucessfully!");
-        
-        const status = "Accepted";
-
-        const updatedjob = { status };
-         
-        fetch(`http://localhost:5000/bids/${_id}`,{
-            method : 'PUT',
-          headers:{
-              'content-type': 'application/json'
-          },
-          body: JSON.stringify(updatedjob)
-        })
-        .then(res=> res.json())
-        .then(data => {
-            console.log(data)
-        })
-
-        
-    }
-
-
-
+function Mybidcard({bid}) {
+    const  { _id,myemail,buyeremail,bidprice,jobtitle,description,category,img,status }=bid;
     return (
         <div>
-                 <div>
+                <div>
             <div key={_id}   className="relative m-11 h-[450px] flex  w-69 flex-col rounded-xl mt-5 bg-clip-border text-gray-700 shadow-md">
       
       <div  className="relative mb-5  h-36 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
@@ -105,22 +52,10 @@ function Bidcard({bid}) {
       
       <div className="p-2 pt-2">
         <button
-        onClick={()=>acceptbtn(_id)}
           className="block text-xl border-solid border-2 border-[#ff44b7] text-black w-[50%] select-none rounded-lg bg-blue-gray-900/10 py-1 px-2 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           type="button"
         >
-           Accept 
-        </button>
-     
-      </div>
-      <div className="p-2 pt-2">
-       
-      <button
-      onClick={()=>rejectbtn(_id)} 
-          className="block text-xl border-solid border-2 border-[#ff44b7] text-black w-[50%] select-none rounded-lg bg-blue-gray-900/10 py-1 px-2 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          type="button"
-        >
-          Reject
+           STATUS: {status}
         </button>
      
       </div>
@@ -135,4 +70,4 @@ function Bidcard({bid}) {
     )
 }
 
-export default Bidcard;
+export default Mybidcard;

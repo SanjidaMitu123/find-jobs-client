@@ -37,8 +37,9 @@ function Bidnow() {
         const description= form.description.value;
         const category= form.category.value;
         const img= form.img.value;
+        const status= "pending";
 
-        const newbid = { myemail,buyeremail,bidprice,deadline,jobtitle,description,category,img}
+        const newbid = { myemail,buyeremail,bidprice,deadline,jobtitle,description,category,img,status}
         fetch('http://localhost:5000/bids',{
             method : 'POST',
             headers:{

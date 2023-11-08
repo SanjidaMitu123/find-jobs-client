@@ -18,6 +18,7 @@ import PrivateRoute from "./PrivateRouter";
 import Addcat from "../pages/Addcat";
 import Jobdetails from "../pages/Jobdetails";
 import Bidnow from "../pages/Bidnow";
+import Updatejobdetails from "../pages/Updatejobdetails";
 
 const router =   createBrowserRouter([
     {
@@ -52,13 +53,23 @@ const router =   createBrowserRouter([
      
   } ,
   {
+    path : "/Updatejob/:id",
+    element : <PrivateRoute><Updatejobdetails></Updatejobdetails></PrivateRoute>,
+    loader : ({params})=> fetch(`http://localhost:5000/jobs/${params.id}`)
+    
+},
+  {
     path : "/mypostedjob",
     element : <PrivateRoute><Mypostedjob></Mypostedjob></PrivateRoute>,
+    loader : () => fetch('http://localhost:5000/jobs')
    
 } ,
+
+
 {
   path : "/mybids",
   element : <PrivateRoute><Mybids></Mybids></PrivateRoute>,
+  loader : () => fetch('http://localhost:5000/bids')
  
 } ,
 {
