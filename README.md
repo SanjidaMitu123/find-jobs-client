@@ -1,7 +1,7 @@
  find job wesite link :  https://find-job-a0a45.web.app/
 
 
- serverl link: https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/
+ serverl link: https://b8a11-server-side-sanjida-mitu123.vercel.app/
 
  features :
  1.User can login
