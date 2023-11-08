@@ -1,8 +1,11 @@
-# React + Vite
+ find job wesite link :  https://find-job-a0a45.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ features :
+ 1.User can login
+ 2.After login user will re direct to before selected link
+ 3.User can add job after login
+ 4.User can bid on job
+ 5.all bidded job will show in bids request page
+ 6.user can delete and update job post
+ 7.contact and about us section is there
+ 8.user can login
