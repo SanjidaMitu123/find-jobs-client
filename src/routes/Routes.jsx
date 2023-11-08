@@ -29,7 +29,7 @@ const router =   createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
-            loader : () => fetch('http://localhost:5000/jobs')
+            loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs')
         },
         {
           path : "/login",
@@ -44,7 +44,7 @@ const router =   createBrowserRouter([
       {
         path : "/alljobs",
         element : <Alljobs></Alljobs>,
-        loader : () => fetch('http://localhost:5000/jobs')
+        loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/obs')
        
     } ,
     {
@@ -55,13 +55,13 @@ const router =   createBrowserRouter([
   {
     path : "/Updatejob/:id",
     element : <PrivateRoute><Updatejobdetails></Updatejobdetails></PrivateRoute>,
-    loader : ({params})=> fetch(`http://localhost:5000/jobs/${params.id}`)
+    loader : ({params})=> fetch(`https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs/${params.id}`)
     
 },
   {
     path : "/mypostedjob",
     element : <PrivateRoute><Mypostedjob></Mypostedjob></PrivateRoute>,
-    loader : () => fetch('http://localhost:5000/jobs')
+    loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs')
    
 } ,
 
@@ -69,13 +69,13 @@ const router =   createBrowserRouter([
 {
   path : "/mybids",
   element : <PrivateRoute><Mybids></Mybids></PrivateRoute>,
-  loader : () => fetch('http://localhost:5000/bids')
+  loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/bids')
  
 } ,
 {
   path : "/bidreq",
   element : <PrivateRoute><Bidreq></Bidreq></PrivateRoute>,
-  loader : () => fetch('http://localhost:5000/bids')
+  loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/bids')
 }  ,
 {
   path : "/contacts",
@@ -91,7 +91,7 @@ const router =   createBrowserRouter([
 {
   path : "/bidnow/:_id",
   element : <PrivateRoute><Bidnow></Bidnow></PrivateRoute>,
-  loader : () => fetch('http://localhost:5000/jobs')
+  loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs')
   
 } ,
 {
@@ -104,7 +104,7 @@ const router =   createBrowserRouter([
   
   path : "/jobs/:_id",
   element : <PrivateRoute><Jobdetails></Jobdetails></PrivateRoute>,
-  loader : () => fetch('http://localhost:5000/jobs')
+  loader : () => fetch('https://b8a11-server-side-sanjida-mitu123-1j3zjc8ut.vercel.app/jobs')
    
 } 
       ]
